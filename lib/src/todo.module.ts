@@ -20,7 +20,7 @@ import { TodoService } from './todo.service';
   ]
 })
 export class TodoModule {
-  public static forRoot(config): ModuleWithProviders {
+  public static forRoot(config): ModuleWithProviders<any> {
     return {
       ngModule: TodoModule,
       providers: [
