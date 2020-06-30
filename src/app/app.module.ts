@@ -7,12 +7,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TodoModule.forRoot({brand: 'Brand Name'})
+    TodoModule.forRoot({brand: 'Brand Name'}),
   ],
   providers: [],
   bootstrap: [AppComponent]

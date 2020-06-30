@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TodoService } from 'angular-lib-todo';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-lib';
+  constructor(private todo: TodoService) {
+    this.todo.show();
+  }
 }
